@@ -27,6 +27,7 @@ export default withMermaid({
             { text: 'Category', link: '/pages/category' },
             { text: 'Archives', link: '/pages/archives' },
             { text: 'Tags', link: '/pages/tags' },
+            { text: 'Tools', link: '/pages/tools'},
             { text: 'About', link: '/pages/about' }
             // { text: 'Airene', link: 'http://airene.net' }  -- External link test
         ],

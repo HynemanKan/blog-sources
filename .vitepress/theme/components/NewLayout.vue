@@ -9,7 +9,7 @@
             </div>
         </template>
         <template #doc-bottom>
-            <Comment />
+            <CommentGiscus />
         </template>
     </Layout>
     <Copyright />
@@ -19,5 +19,6 @@ import DefaultTheme from 'vitepress/theme'
 import Copyright from './Copyright.vue'
 import { withBase } from 'vitepress'
 import { convertDateV2 } from '../date'
+import CommentGiscus from "./CommentGiscus.vue";
 const { Layout } = DefaultTheme
 </script>

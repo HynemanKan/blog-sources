@@ -15,12 +15,12 @@ export default withMermaid({
     ignoreDeadLinks: true,
     themeConfig: {
         posts: await getPosts(pageSize),
-        website: 'https://github.com/airene/vitepress-blog-pure', //copyright link
+        website: 'https://github.com/HynemanKan', //copyright link
         // 评论的仓库地址 https://giscus.app/ 请按照这个官方初始化后覆盖
         comment: {
-            repo: 'airene/vitepress-blog-pure',
-            repoId: 'MDEwOlJlcG9zaXRvcnkzODIyMjY5Nzg',
-            categoryId: 'DIC_kwDOFshSIs4CpZga'
+            repo: 'HynemanKan/blog-comments',
+            repoId: 'R_kgDOQozFow',
+            categoryId: 'DIC_kwDOQozFo84CzzQL'
         },
         nav: [
             { text: 'Home', link: '/' },
@@ -37,7 +37,7 @@ export default withMermaid({
         outline: {
             label: '文章摘要'
         },
-        socialLinks: [{ icon: 'github', link: 'https://github.com/airene/vitepress-blog-pure' }]
+        socialLinks: [{ icon: 'github', link: 'https://github.com/HynemanKan' }]
     } as any,
 
     srcExclude: isProd

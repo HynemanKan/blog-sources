@@ -17,16 +17,16 @@ description: 使用iptables进行NAT端口映射和局限
 
 ```mermaid
 graph
-    internet-->firewall[firewall\n global:xx.xx.xx.xx\n dmz:10.0.0.x]
+    internet-->firewall[firewall<br/> global:xx.xx.xx.xx<br/> dmz:10.0.0.x]
     firewall --NAT--> B
     subgraph private network
         subgraph vLAN1
-            B[serviceA\n dmz:10.0.0.x\n private:20.0.0.x]
+            B[serviceA<br/> dmz:10.0.0.x<br/> private:20.0.0.x]
             D[others]
         end
 
         subgraph vLAN2
-            C[serviceB\n private:30.0.0.1]
+            C[serviceB<br/> private:30.0.0.1]
             E[others]
         end    
     end
@@ -62,17 +62,17 @@ iptables -t nat -A PREROUTING -p udp -m udp --dport 30010 -j DNAT --to-destinati
 
 ```mermaid
 graph
-    internet-->firewall[firewall\n global:xx.xx.xx.xx\n dmz:10.0.0.x]
+    internet-->firewall[firewall<br/> global:xx.xx.xx.xx<br/> dmz:10.0.0.x]
     firewall --NAT--> B
     subgraph private network
         subgraph vLAN1
-            B[serviceA\n dmz:10.0.0.x\n private:20.0.0.x]
+            B[serviceA<br/> dmz:10.0.0.x<br/> private:20.0.0.x]
             D[others]
         end
 
         subgraph vLAN2
             B--forward-->C
-            C[serviceB\n private:30.0.0.1]
+            C[serviceB<br/> private:30.0.0.1]
             C--route-->B
             E[others]
         end

@@ -6,6 +6,7 @@ import Category from './components/Category.vue'
 import Tags from './components/Tags.vue'
 import Page from './components/Page.vue'
 import Comment from './components/CommentGiscus.vue'
+import BrowserIframe from "./components/BrowserIframe.vue";
 
 import './custom.css'
 
@@ -19,5 +20,6 @@ export default {
         app.component('Archives', Archives)
         app.component('Page', Page)
         app.component('Comment', Comment)
+        app.component('BrowserIframe', BrowserIframe)
     }
 } satisfies Theme

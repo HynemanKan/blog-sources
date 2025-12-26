@@ -164,10 +164,10 @@ sequenceDiagram
 
 请看 [GitHub](https://github.com/HynemanKan/passkey-openid-cloudflare-worker/)
 
-## 使用方案
+## 使用方法
 
 - 请按照项目中`readme.md`文档完成部署。
-- 由于~~安全~~偷懒对原因，没有做管理面板，需要创建绑定连接的话，请使用cloudflare d1 的管理面板手动在`binding`表中添加数据并构造如下url访问。
+- 还是由于~~安全~~偷懒对原因，没有做管理面板，需要创建绑定连接的话，请使用cloudflare d1 的管理面板手动在`binding`表中添加数据并构造如下url访问。
 
 ```txt
 https://${your-domain}/binding?ticket=${challenge_id}
